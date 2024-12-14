@@ -185,12 +185,12 @@ section {
 .section_pic-container {
     display: flex; /* Flexbox 활성화 */
     justify-content: center; /* 가로 중앙 정렬 */
-    margin: auto 0; /* 세로 정렬을 위한 자동 마진 */
+    transform: scale(1.1); /* 스케일 1.1배 확대 */
+    z-index: -1; /* 레이어 맨 아래로 이동 */
 }
 
 /* 텍스트 중앙 정렬 */
 .section__text {
-    text-align: center;
     text-align: center;
 }
 
@@ -212,6 +212,10 @@ section {
     text-align: center;
 }
 
+.title span {
+    font-weight: 500;
+}
+
 #socials-container {
     display: flex;
     justify-content: center;
@@ -222,7 +226,9 @@ section {
 /* ICONS */
 
 .icon {
-    display: flex;
     cursor: pointer;
-    transform: scale(0.2);
+    height: 5rem;
 }
+
+/* NO BUTTON */
+
